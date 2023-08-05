@@ -158,6 +158,14 @@ html {
     display: none;
   }
 
+  #p-banner {
+    display: none;
+  }
+
+  #vodka-news {
+    display: none;
+  }
+
 
   /*Height for mobile grid*/
 .col-span-4 {
@@ -405,6 +413,14 @@ html {
       display: block;
     }
 
+    #p-banner {
+      display: none;
+    }
+
+    #vodka-news {
+      display: block;
+    }
+
   /*Height for tablet grid*/
 .col-span-4 {
     height: 270px;
@@ -641,6 +657,14 @@ html {
     }
 
     #banner-text {
+      display: block;
+    }
+
+    #p-banner {
+      display: block;
+    }
+
+    #vodka-news {
       display: block;
     }
 
