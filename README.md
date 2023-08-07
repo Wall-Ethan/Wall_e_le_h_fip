@@ -16,7 +16,7 @@ The icons will change when you hover them, you can drag and drop the icons so th
 ## History
 At first, we discussed what we want it to look like, then we consulted the web to look for samples and sketch what we wanted to put in the website. Next, we used Illustrator to replicate the design as the same as in the sketch and change it to make sure it work out, then we coded it out and finally put it on Git Hub.
 ## Credits
-All designs made by Ha Anh Le and Johnathan Yabes
+All designs made by Ha Anh Le and Ethan Wall
 ## License
 Copyright © 2023 <Ha Anh and Ethan Wall>
 
