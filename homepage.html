@@ -9,6 +9,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lora&family=Playfair+Display&display=swap" rel="stylesheet">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>Home Page</title>
 </head>
 <body>
@@ -16,75 +17,370 @@
 
         <section class="spacer">
             <header id="main-header" class="grid-con">
-                <div class="col-span-1 m-col-span-2 l-col-span-2 xl-col-span-2 box"></div>
+                <div class="col-span-1 m-col-span-2 l-col-span-2 xl-col-span-2 box">
+                    <img src="./img/png/logo.png" alt="logo" id="logo">
+                </div>
                 
-                <nav class="col-start-2 col-end-5 m-col-span-10 l-col-span-10 xl-col-span-10 box" id="main-nav">
-                    <ul>
+                <nav class="col-start-2 col-end-5 m-col-span-10 l-col-span-8 xl-col-span-10 box" id="main-nav">
+                    
+                    <button id="button"></button>
+                    <div class="burgerCon">
+                    <ul id="burgerMenu">
 
                         <li><a class="active" href="homepage.html">Home</a></li>
-                        <li><a href="#">Sale</a></li>
-                        <li><a href="#">Popular</a></li>
-                        <li><a href="#">New In</a></li>
-                        <li><a href="#">About Us</a></li>
+                        <li><a href="product.html">Vodka</a></li>
+                        <li><a href="#">Gifts</a></li>
+                        <li><a href="product.html">New In</a></li>
+                        <li><a href="aboutus.html">About Us</a></li>
+                        <li><a href="#">Merch</a></li>
                     </ul>
-                </nav>
+                </div>
+                    </nav>
+                    <div class="l-col-span-2 icon">
+                    <div class="header_right_info">
+                        <ul>
+                            <li class="search_box" >
+                                <a href="javascript:void(0)">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                                <div class="search_widget">
+                                    <form action="#">
+                                        <input type="text" placeholder="Search Your Wine...">
+                                        <button type="submit">
+                                            <i class="fa fa-search"></i>
+                                        </button>
+                                    </form>
+                                </div>
+                            </li>
+                            <li class="header_wishlist">
+                                <a href="#">
+                                    <i class="fa fa-heart"></i>
+                                    <span class="item_count">4</span>
+                                </a>
+                            </li>
+                            <li class="mini_cart_wrapper">
+                                <a href="javascript:void(0)">
+                                    <i class="fa fa-shopping-cart"></i>
+                                    <span class="item_count">2</span>
+                                </a>
+                                <div class="mini_cart mini_cart2">
+                                    <div class="cart_gallery">
+                                        <div class="cart_item">
+                                            <div class="cart_img">
+                                                <a href="#">
+                                                    <img src="./img/png/clear.png" alt="clear" class="imgcart">
+                                                </a>
+                                            </div>
+                                            <div class="cart_info">
+                                                <a href="#">
+                                                    Premium Vodka
+                                                </a>
+                                                <p><span>Rs. 26669</span> X 1</p>
+                                            </div>
+                                            <div class="cart_remove">
+                                                <a href="#"><i class="fa fa-times"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="cart_item">
+                                            <div class="cart_img">
+                                                <a href="#">
+                                                    <img src="./img/png/red.png" alt="red" class="imgcart">
+                                                </a>
+                                            </div>
+                                            <div class="cart_info">
+                                                <a href="#">
+                                                    Luminious Vodka
+                                                </a>
+                                                <p><span>Rs. 55961</span> X 1</p>
+                                            </div>
+                                            <div class="cart_remove">
+                                                <a href="#"><i class="fa fa-times"></i></a>
+                                            </div>
+                                        </div>
+        
+                                    </div>
+        
+                                    <div class="mini_cart_table">
+                                        <div class="cart_table_border">
+                                            <div class="cart_total">
+                                                <span>Sub Total :</span>
+                                                <span class="price">Rs. 82630</span>
+        
+                                            </div>
+                                            <div class="cart_total mt-10">
+                                                <span>Total :</span>
+                                                <span class="price">Rs. 82630</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mini_cart_footer">
+                                        <div class="cart_button">
+                                            <a href="#">View Cart</a>
+                                        </div>
+                                        <div class="cart_button">
+                                            <a href="#">Checkout</a>
+                                        </div>
+        
+                                    </div>
+                                </div>
+        
+        
+        
+                            </li>
+                        </ul>
+                    </div>
+                
+            </div>
+
            
             </header>
 
-            <section class="grid-con">
+
+            <section class="grid-con" id="hbg1">
                 <h2 class="hidden">Hero Image</h2>
-                <div class="col-span-2 m-col-span-7 l-col-span-4 xl-col-span-4 box">ZIMA ORIGINAL VODKA</div>
-                <div class="col-span-2 m-col-span-5 l-col-span-4 xl-col-span-4 box"></div>
-                <div class="l-col-span-4 xl-col-span-4 box" id="banner-text">Where It Started? Our 2016 growing season led to some of the finest vodkas ever made by our distillery. Harvested at the peak of summer, when still young and their skins still tender, these potatoes would produce a remarkable vodka.</div>
+                <div class="col-span-2 m-col-span-7 l-col-span-4 xl-col-span-4 box">
+                    <h2>Zima Original Vodka</h2><br>
+                <p>Introducing Zima's Bartender's Choice Vodka, a bold and straightforward variation of Zima's award-winning rye vodka crafted for those who desire a fuller flavor profile in their cocktails.</p></div>
+                <div class="col-span-2 m-col-span-5 l-col-span-4 xl-col-span-4 box">
+                    <img src="./img/png/photo.png" alt="img" id="h1">
+                </div>
+                <div class="l-col-span-4 xl-col-span-4 box" id="banner-text"><h2>Where It Started?</h2>
+                    <p>
+                    <br>Our 2016 growing season led to some of the finest vodkas ever made by our distillery. Harvested at the peak of summer, when still young and their skins still tender, these potatoes would produce a remarkable vodka.
+                </p>
+                </div>
             </section>
 
-            <section class="grid-con">
+            <section class="grid-con" id="hbg2">
                 <h2 class="hidden">paragraph</h2>
-                <div class="col-span-4 m-col-span-6 l-col-span-12 xl-col-span-12 box">Once in a decade, if we are lucky, we discover an exceptional variety of potato that produces an unrivaled vodka. Our 2016 growing season led to some of the finest vodkas ever made by our distillery. Harvested at the peak of summer, when still young and their skins still tender, these potatoes would produce a remarkable vodka. After being carefully distilled to retain as much of their sweet earthiness as possible, the potato spirit was rested in 50-year-old oak barrels for two years, giving it time to mellow before being bottled by hand.</div>
-                <div class="col-span-4 m-col-span-6 l-col-span-12 xl-col-span-12 box"></div>
+                <div class="col-span-4 m-col-span-6 l-col-span-12 xl-col-span-12 pbox">
+                    <p>Once in a decade, if we are lucky, we discover an exceptional variety of potato that produces an unrivaled vodka. Our 2016 growing season led to some of the finest vodkas ever made by our distillery. Harvested at the peak of summer, when still young and their skins still tender, these potatoes would produce a remarkable vodka. ZIMA focuses on three styles of vodka potato, rye and wheat. Each is a celebration of impeccable produce and masterful craft that draws out the unique flavor of the ingredients. We don't produce artificially flavored vodka and we never will. When ingredients are this pure, they speak for themselves.</p>
+                    </div>
             </section>
+            <section class="grid-con" id="vid">
+                <h2 class="hidden">paragraph</h2>
+                <div class="col-span-4 m-col-span-6 l-col-span-12 xl-col-span-12 box">
+                    <video class="video" controls>
+                        <source src="./assets/zima_promo.m" type="video/mp4">
+                        <source src="movie.ogg" type="video/ogg">
+                    </video>
+                    </div>
+            </section>
+            
  
-            <section class="grid-con">
+            <section class="grid-con" id="products" >
                 <h2 class="hidden">Products</h2>
-                <div class="col-span-4 m-col-span-4 l-col-span-4 xl-col-span-4 box">name</div>
+                <div class="col-span-4 m-col-span-6 l-col-span-12 xl-col-span-12 title">
+                    <h2 class="title">TOP SELLERS </h2>
+                    </div>
+                <div class="col-span-4 m-col-span-4 l-col-span-4 xl-col-span-4 box">
+               
+                    <img src="./img/png/clear.png" alt="clear" class="htop">
+                
+                </div>
+                <div class="col-span-3" id="txt2"><h3>Premium Vodka</h3></div>
+                
+                <div class="col-span-4 m-col-span-4 l-col-span-4 xl-col-span-4 box">
+                   
+                    <img src="./img/png/blue2.png" alt="clear" class="htop">
+              
+                </div>
+                <div class="col-span-3" id="txts2"><h3>Poisonous Vodka</h3></div>
+               
+                <div class="col-span-4 m-col-span-4 l-col-span-4 xl-col-span-4 box">
+                  
+                    <img src="./img/png/red.png" alt="clear" class="htop">
+               
+                </div>
+                <div class="col-span-3" id="texts2"><h3>Luminious Vodka</h3></div>
 
-                <div class="col-span-3" id="txt2"></div>
-                <div class="col-span-4 m-col-span-4 l-col-span-4 xl-col-span-4 box">name</div>
-                <div class="col-span-3" id="txts2"></div>
-                <div class="col-span-4 m-col-span-4 l-col-span-4 xl-col-span-4 box">name</div>
-                <div class="col-span-3" id="text2"></div>
+                <div class="col-span-2 m-col-span-4 l-col-span-4 xl-col-span-3 box" >
+                    <p class="txttop">Premium Vodka</p></div>
+                    <div class="col-span-2 m-col-span-4 l-col-span-4 xl-col-span-3 box" >
+                        <p class="txttop">Poisonous Vodka</p></div>
+                <div class="col-span-2 m-col-span-4 l-col-span-4 xl-col-span-3 box" >
+                    <p class="txttop">Luminious Vodka</p></div>
             </section>
 
             <section class="grid-con" id="relevant-product">
                 <h2 class="hidden">Premotion</h2>
-                <div class="col-span-4 m-col-span-5 l-col-span-6 xl-col-span-6 box">image</div>
-                <div class="m-col-span-5 l-col-span-6 xl-col-span-6 box" id="product-txt">After being carefully distilled to retain as much of their sweet earthiness as possible, the potato spirit was rested in 50-year-old oak barrels for two years, giving it time to mellow before being bottled by hand.</div>
-                <div class="m-col-span-5 l-col-span-6 xl-col-span-6 box" id="product-txt">Combine Chopin Family Reserve Vodka and Dos Déus Origins Dry White Vermouth in an ice-filled mixing glass, then stir gently until cold. Once cold, pour into martini glass through a fine mesh strainer and garnish with a twist of lemon.</div>
-                <div class="col-span-4 m-col-span-5 l-col-span-6 xl-col-span-6 box">image</div>
+                <div class="col-span-4 m-col-span-6 l-col-span-6 xl-col-span-6 box">
+                    <img src="./img/png/blue.png" alt="clear" class="htop">
+                </div>
+                <div class="m-col-span-6 l-col-span-6 xl-col-span-6 box">
+                    <p class="product-txt">
+                    After being carefully distilled to retain as much of their sweet earthiness as possible, the potato spirit was rested in 50-year-old oak barrels for two years, giving it time to mellow before being bottled by hand. The result is ZIMA, the worlds first rested, super-premium potato vodka. We suggest enjoying it neat or in a classic martini to fully appreciate this remarkable vodka.All our crops are grown within 20 miles of our distillery near Krzesk, in the farming heartland of eastern Poland. This allows us to work closely with our suppliers to maintain the quality our vodka demands, personally selecting ingredients to ensure only the very best are used.
+                </p>
+                </div>
+                <div class="m-col-span-6 l-col-span-6 xl-col-span-6 box">
+                    <p class="product-txt">
+                    Combine ZIMA Vodka and Dos Déus Origins Dry White Vermouth in an ice-filled mixing glass, then stir gently until cold. Once cold, pour into martini glass through a fine mesh strainer and garnish with a twist of lemon.Boasting a 59.8% ABV (119.5 proof), the Bartender’s Choice is one of the world’s highest-proof vodkas. Yet, its character remains balanced, providing a smoky aroma laced with a slight hint of herbs. It delivers a distinctive flavor profile, rich with notes of black pepper and blackthorn, ultimately giving a pleasant, bittersweet finish that lingers with traces of almonds, apricots, and vanilla.
+                </p>
+                </div>
+                <div class="col-span-4 m-col-span-6 l-col-span-6 xl-col-span-6 box">
+                    <img src="./img/png/red2.png" alt="clear" class="htop">
+                </div>
             </section>
  
-            <section class="grid-con">
+            <section class="grid-con" id="MERCH">
                 <h2 class="hidden">Banner</h2>
-                <div class="col-span-4 m-col-span-12 l-col-span-12 xl-col-span-12 box">MERCH</div>
+                <div class="col-span-4 m-col-span-12 l-col-span-12 xl-col-span-12 box"><h2>MERCH</h2>
+                    <article id="merch" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                          <section class="carousel-indicators">
+                            <button type="button" data-bs-target="#merch" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#merch" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#merch" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        
+                          </section>
+    
+                          <section class="carousel-item active c-item">
+                            <img src="./img/merch/merch/original_luxury-cocktail-shaker-kit.png" class="d-block  c-img" alt="bride">
+                            <div class="carousel-caption top-0 mt-4 d-none d-md-block">
+                              
+                              
+                            </div>
+                          </section>
+    
+                          <section class="carousel-item c-item">
+                            <img src="./img/merch/merch/jigger.png" class="d-block  c-img" alt="cover">
+                            <div class="carousel-caption  top-0 mt-4">
+                                
+                                 </div>
+                          </section>
+    
+                          <section class="carousel-item c-item">
+                            <img src="./img/merch/merch/vodka-glass.png" class="d-block c-img " alt="paper">
+                            <div class="carousel-caption  top-0 mt-4">
+                               
+                                 </div>
+                          </section>
+                          
+                        </div>
+    
+                        <button class="carousel-control-prev" type="button" data-bs-target="#merch" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+    
+                        <button class="carousel-control-next" type="button" data-bs-target="#merch" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                    </article>
+                </div>
             </section>
             <section class="grid-con" id="footer-home">
                 <h2 class="hidden">Products</h2>
-                <div class="col-span-4 m-col-span-12 l-col-span-12 xl-col-span-12 box">
+                <div class="col-span-4 m-col-span-6 l-col-span-6 xl-col-span-6 new">
+                   
+                        <h3 class="form">Newsletter</h3>
+                        <p class="form">Sign Up to our newsletter and save 20% of on next purchase</p>
+                </div>
+
+                <div class="col-span-4 m-col-span-6 l-col-span-6 xl-col-span-6 input">
+                   
                     <div id="contact-form" class="box-color">
-                        <h3>Newsletter Sign Up to our newsletter and save 20% of on next purchase</h3>
                         <form>
-                            <input type="email" class="input-field" placeholder="Your Email"><br>
-                            <input type="submit" value="Send ➣" >
+                            <input type="email" class="input-field" placeholder="Your Email">
+                            <div>
+                            <button type="submit" value="Send ➣" class="btn btn-default">Subscribe <i
+                                class="fa fa-envelope"></i></button>
+                            </div>
                         </form>
                     </div>
                 </div>
-                <div class="col-span-4 m-col-span-12 l-col-span-12 xl-col-span-12 box "></div>
-                <div class="col-span-4 m-col-span-12 l-col-span-12 xl-col-span-12 box"></div>
-                <div class="col-span-4 m-col-span-12 l-col-span-12 xl-col-span-12 box">DESIGN BY @HARI</div>
+                <div class="col-span-4 m-col-span-12 l-col-span-12 xl-col-span-12 footer ">
+                    <article id="footer-nav" class="box-color">
+                        <h2 class="hidden">Main Navigation</h2>
+                        <h3 class="hidden"></h3>
+                        <nav class="footer-nav" id="m-nav">
+                            
+                            <div class="">
+                            <ul class="text-decoration-edit">
+                                <li><a class="active" href="index.html">Company</a></li>
+                                <li><a href="aboutus.html">About Us</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="#">FAQs</a></li>
+                                <li><a href="#">Term Of Service</a></li>
+                            </ul>
+                            </div>
+                            <div class="Social">
+                                <h4 class="foot">Social Media</h4>
+                                <svg version="1.1" id="facebook" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                    viewBox="0 0 800 800" style="enable-background:new 0 0 800 800;" xml:space="preserve">
+                                    <style type="text/css">
+                                    .st0{fill-rule:evenodd;clip-rule:evenodd;}
+                                      </style>
+                                      <g id="f-line">
+                                    <g id="Dribbble-Light-Previews" transform="translate(-385.000000, -7399.000000)">
+                                     <g id="iconss" transform="translate(56.000000, 160.000000)">
+                                     <path id="facebook-_x5B__x23_176_x5D_" class="st0" d="M794.4,8034v-355.5h107.9l17.6-158H794.4v-77c0-40.7,1-81,57.9-81h57.6
+                                        v-113c0-1.7-49.5-5.5-99.5-5.5c-104.5,0-169.9,65.5-169.9,185.7v90.8H525v158h115.5V8034H794.4z"/>
+                                         </g>
+                                         </g>
+                                     </g>
+                                   </svg>
+                                   <svg version="1.1" id="insta" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                   viewBox="0 0 800 800" style="enable-background:new 0 0 800 800;" xml:space="preserve">
+                                   <style type="text/css">
+                                  .st0{fill-rule:evenodd;clip-rule:evenodd;}
+                                      </style>
+                                       <g id="i-line">
+                                     <g id="Dribbble-Light-Previeww" transform="translate(-340.000000, -7439.000000)">
+                                    <g id="iconses" transform="translate(56.000000, 160.000000)">
+                                <path id="instagram-_x5B__x23_167_x5D_" class="st0" d="M521.1,7289.3c-64.2,2.9-119.9,18.6-164.8,63.4
+                       c-45.1,45-60.6,100.9-63.5,164.4c-1.8,39.7-12.4,339.3,18.3,417.9c20.6,53,61.3,93.8,114.8,114.5c25,9.7,53.5,16.3,95.3,18.2
+                       c349.6,15.8,479.1,7.2,533.8-132.7c9.7-24.9,16.4-53.4,18.2-95.1c16-350.4-2.6-426.4-63.5-487.3
+                       C961.2,7304.5,904.4,7271.7,521.1,7289.3 M524.3,7997.3c-38.3-1.7-59-8.1-72.9-13.5c-34.9-13.5-61-39.6-74.5-74.3
+                       c-23.3-59.7-15.6-343.3-13.5-389.2c2-45,11.1-86,42.9-117.8c39.3-39.2,90-58.3,435.3-42.8c45.1,2,86.2,11.1,118,42.8
+                       c39.3,39.2,58.7,90.3,42.9,434.3c-1.7,38.2-8.1,58.9-13.5,72.7C953.4,8000.6,871.7,8013.2,524.3,7997.3 M845.3,7469.5
+                       c0,25.9,21.1,47,47.1,47c26,0,47.1-21.1,47.1-47c0-25.9-21.1-47-47.1-47C866.4,7422.5,845.3,7443.6,845.3,7469.5 M481.3,7678.5
+                       c0,111,90.2,201.1,201.6,201.1s201.6-90,201.6-201.1c0-111-90.2-201-201.6-201S481.3,7567.5,481.3,7678.5 M552.1,7678.5
+                       c0-72,58.6-130.5,130.8-130.5c72.3,0,130.8,58.5,130.8,130.5c0,72.1-58.6,130.6-130.8,130.6
+                       C610.6,7809.1,552.1,7750.6,552.1,7678.5"/>
+                 </g>
+               </g>
+               </g>
+               </svg>
+               <svg version="1.1" id="twitter" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                viewBox="0 0 800 800" style="enable-background:new 0 0 800 800;" xml:space="preserve">
+               <style type="text/css">
+                .st0{fill-rule:evenodd;clip-rule:evenodd;}
+               </style>
+               <g id="t-line">
+               <g id="Dribbble-Light-Preview" transform="translate(-60.000000, -7521.000000)">
+               <g id="icons" transform="translate(56.000000, 160.000000)">
+               <path id="twitter-_x5B__x23_154_x5D_" class="st0" d="M255.6,8081c301.9,0,467-246.2,467-459.8c0-7,0-14-0.5-20.9
+                 c32.1-22.9,59.8-51.2,81.9-83.7c-29.9,13.1-61.7,21.7-94.2,25.4c34.2-20.2,59.9-51.9,72.2-89.4c-32.2,18.8-67.5,32.1-104.2,39.2
+                 c-62.2-65.1-166.1-68.2-232.2-7c-42.6,39.5-60.7,98.3-47.5,154.4c-132-6.5-254.9-67.9-338.3-168.8
+                 c-43.6,73.8-21.3,168.3,50.8,215.7c-26.1-0.7-51.7-7.7-74.5-20.2v2.1c0,76.9,55.1,143.1,131.7,158.4c-24.2,6.5-49.5,7.4-74.1,2.8
+                 c21.5,65.9,83.1,111,153.3,112.2c-58.1,45-129.9,69.4-203.8,69.3c-13,0-26.1-0.8-39.1-2.3c75.1,47.4,162.4,72.6,251.6,72.5"/>
+               </g>
+               </g>
+               </g>
+               </svg>
+                </div>
+                </nav>
+                        
+                </article>
+                <div class="txt-f">
+                    <h5>All designs and codes made by Ha Anh Le and Ethan</h5>
+                </div>
+
+                </div>
+               
+             
+                
                 
             </section> 
+             
         </section>
+        <footer></footer>
+    
+        <script src="js/main.js"></script>
         <script src="https://kit.fontsawsome.com/0eab0f8aa6.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
 </body>
 </html>

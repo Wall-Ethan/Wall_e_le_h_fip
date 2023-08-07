@@ -27,13 +27,61 @@ html {
 }
   
 .box {
-    background-color: rgb(51, 51, 51);
+    
     color: rgb(255, 255, 255);
-    border-radius: 5px;
-    padding: 20px;
+    
+    padding: 5px ;
     text-align: center;
     margin-top: 10px;
     margin-bottom:10px;
+    align-items: center;
+}
+.footer {
+  color: rgb(255, 255, 255);
+    background-color: black;
+    padding: 5px ;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom:10px;
+    align-items: center;
+}
+.new {
+  color: rgb(255, 255, 255);
+  background-color: #7B7B7B;
+  padding: 65px ;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom:10px;
+  align-items: center;
+}
+
+.input {
+  color: rgb(255, 255, 255);
+  background-color: #313131;
+  padding: 65px ;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom:10px;
+  align-items: center;
+}
+.pbox {
+  color: rgb(255, 255, 255);
+  
+  padding: 85px ;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom:10px;
+  align-items: center;
+}
+
+#products{
+  color: rgb(255, 255, 255);
+    background-color: black;
+    padding: 5px ;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom:10px;
+    align-items: center;
 }
 
     
@@ -150,21 +198,9 @@ html {
     display: none;
   }
 
-  #banner-text {
-    display: none;
-  }
+  
+  
 
-  #product-txt {
-    display: none;
-  }
-
-  #p-banner {
-    display: none;
-  }
-
-  #vodka-news {
-    display: none;
-  }
 
 
   /*Height for mobile grid*/
@@ -173,26 +209,12 @@ html {
 
 }
 
-#pr, #pro  {
-    height: 150px;
-    
-}
+
 
 .col-span-2{
     height: 250px;
 }
 
-#footer{
-    height: 150px;
-}
-
-#txt, #txts, #text, #texts {
-    display: none;
-}
-
-#txt2, #txts2, #text2, #texts2 {
-  display: block;
-}
 
 
 
@@ -401,25 +423,7 @@ html {
       display: none;
     }
 
-    #img {
-      display: none;
-    }
 
-    #banner-text {
-      display: none;
-    }
-
-    #product-txt {
-      display: block;
-    }
-
-    #p-banner {
-      display: none;
-    }
-
-    #vodka-news {
-      display: block;
-    }
 
   /*Height for tablet grid*/
 .col-span-4 {
@@ -427,27 +431,12 @@ html {
 
 }
 
-#pr-t, #pro-t  {
-    height: 150px;
-    
-}
+
 
 .col-span-2{
     height: 250px;
 }
 
-#foot{
-    height: 150px;
-}
-
-
-#txt, #txts, #text, #texts {
-  display: block;
-}
-
-#txt2, #txts2, #text2, #texts2 {
-  display: none;
-}
 
   }
   
@@ -652,30 +641,7 @@ html {
       display: block;
     }
 
-    #img {
-      display: none;
-    }
 
-    #banner-text {
-      display: block;
-    }
-
-    #p-banner {
-      display: block;
-    }
-
-    #vodka-news {
-      display: block;
-    }
-
-
-    #txt, #txts, #text, #texts {
-      display: block;
-    }
-
-    #txt2, #txts2, #text2, #texts2 {
-      display: none;
-    }
   }
 
 
@@ -686,18 +652,13 @@ html {
 
 }
 
-#pr-d, #pro-d  {
-    height: 150px;
-    
-}
+
 
 .col-span-2{
     height: 250px;
 }
 
-#footerr{
-    height: 150px;
-}
+
   
   /* 5. ---X-Large Desktop Library Grid Styles--- */
   
@@ -900,19 +861,7 @@ html {
       display: block;
     }
 
-    #img {
-      display: none;
-    }
-
-
-    #txt, #txts, #text, #texts {
-      display: block;
-    }
-
-    #txt2, #txts2, #text2, #texts2 {
-      display: none;
-    }
-
+   
   }
   
   
